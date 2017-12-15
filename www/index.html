@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>App de Fotos</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/pginicial.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/filterous2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+  </head>
+  <body>
+  <!--142254753069546-->
+  <!--https://developers.google.com/places/web-service/search-->
+   <!--AIzaSyD94rN_d408fT2A3qbw1PCA5eRnZrYsU7I-->
+   <!-- inputOptions --> <!--sweetalert2-->
+    <div id="container">
+      <div id="divsuperior">
+        <img id="btnTirarFoto" src="img/camera.png" onclick="tirarFotoCamera();"/>
+        <p id="titulo">Good Picture</p>
+      </div>
+      <div>
+        <img id="fotoTirada" src=""/>
+        <img id="bloquearbtn" src="img/open.png" onclick="clickBotaoTrava()"/>
+      </div>
+      <button id="bt1" onclick="efeitoMono()">MONO</button><button id="bt2" onclick="efeitoSepia()">SEPIA</button><button id="bt3" onclick="efeitoNormal()">NORMAL</button>
+      <div id="opcoesmais">
+        <button id="btnsave" onclick="salvarFotoAtual()">Salvar foto no celular</button>
+        <button id="btnshare" onclick="getLocaisProximos()">Compartilhar no Twitter</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "GoodPicture",
+  "short_name": "GoodPicture",
+  "version": "com.sergio.goodpicture",
+  "description": "Um aplicativo de fotos para postagem em redes sociais e aplicacao de filtros.",
+  "author": "Sergio Marinho",
+  "icons": [],
+  "orientation": "portrait",
+  "start_url": "index.html"
+}

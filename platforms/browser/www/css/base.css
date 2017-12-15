@@ -1,0 +1,112 @@
+@media only screen and (orientation: portrait) {
+	@font-face {
+	    font-family: 'sawasdee';
+	    src: url("../font/Sawasdee.ttf") format('truetype');
+	    font-weight: normal;
+	  	font-style: normal;
+	}
+	@font-face {
+	    font-family: 'mot';
+	    src: url("../font/mot.ttf") format('truetype');
+	    font-weight: bold;
+	  	font-style: normal;
+	}
+	*{
+		font-family: 'sawasdee';
+		overflow-x: hidden;
+		overflow-y: hidden;
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		background-color: #f7f7f7;
+	}
+	button{
+		margin: 0px;
+		padding: 0px;
+		border: none;
+	}
+	#titulo{
+		font-family: 'mot';
+		position: absolute;
+		color: black;
+		font-size: 7vw;
+		top:3vh;
+		left:35vw;
+	}
+	#container{
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		margin:0px;
+		padding:0px;
+	}
+	#divsuperior{
+		background-color: #f8a0a7;
+		color: white;
+		width: 100vw;
+		height: 10vh;
+		font-size: 7vw;
+	}
+	#divsuperior img{
+		height: 7vh;
+		width: 7vh;
+		background-color: white;
+		padding: 1.5vh;
+	}
+	#fotoTirada{
+		border:none;
+		background-color: black;
+		width: 100vw;
+		height: 100vw;
+		border-color: black;
+	}
+	#bt1,#bt2,#bt3{
+		background-color: transparent;
+		border-color:black; 
+		border-bottom:solid; 
+		width: 32vw;
+		height: 6vh;
+		font-size: 4.5vw;
+	}
+	button:focus {
+	  outline: none;
+	}
+	#bt1,#bt2{
+		margin-right: 2vw;
+	}
+	#opcoesmais{
+		position: absolute;
+		bottom: 3vh;
+	}
+	#btnshare{
+		width: 90vw;
+		height: 7vh;
+		margin-top: 2vh;
+		background-color: #0084b4;
+		font-size: 5vw;
+		margin-left:5vw;
+		margin-right:5vw;
+		color:#f7f7f7;
+	}
+	#btnsave{
+		width: 90vw;
+		height: 7vh;
+		background-color: gray;
+		font-size: 5vw;
+		margin-left:5vw;
+		margin-right:5vw;
+		color:#f7f7f7;
+	}    
+	#bloquearbtn{
+		position: absolute;
+		top: 57vh;
+		right: 0;
+		width: 8vh;
+		height: 8vh;
+		margin-right: 2vw;
+	}
+}
