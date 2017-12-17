@@ -87,7 +87,7 @@
     function salvarFotoAtual(){
       var fotinhadosrc = document.getElementById("fotoTirada").src;
       if(fotinhadosrc.indexOf("data:image/jpeg;base64,") === -1){
-        alertaErro("Tire uma foto!","Você precisa tirar uma foto para poder salvar");
+        alertaErro("Take a picture!","You need to take a picture to be able to save!");
         return;
       }
       var myBase64 = fotinhadosrc.replace("data:image/jpeg;base64,","");
@@ -126,23 +126,23 @@
 
     function compartilhar(){
       var fotinhadosrc = document.getElementById("fotoTirada").src;
-      window.plugins.socialsharing.shareViaTwitter("Em "+localEscolhido, fotinhadosrc, null);
+      window.plugins.socialsharing.shareViaTwitter("In "+localEscolhido, fotinhadosrc, null);
     }
 
     function getTextolocal(opt){        
       swal({
-        title: 'Onde você está?',
+        title: 'Where are you?',
         input: 'select',
         inputOptions: opt,
-        inputPlaceholder: 'Selecione um lugar próximo',
+        inputPlaceholder: 'Select a near place',
         showCancelButton: false,
       }).then(function (valorNovo) {
         localEscolhido=valorNovo.value;
         if(valorNovo.value==null){
-          alertaErro("Erro","Nenhum local foi selecionado!");
+          alertaErro("Error","No locations selected!");
         }
         else if(valorNovo.value.trim()==""){
-          alertaErro("Erro","Nenhum local foi selecionado!");
+          alertaErro("Error","No locations selected!");
         }
         else{
           compartilhar();
@@ -163,7 +163,7 @@
 function getLocaisProximos(){
   var fotinhadosrc = document.getElementById("fotoTirada").src;
   if(fotinhadosrc.indexOf("data:image/jpeg;base64,") === -1){
-    alertaErro("Tire uma foto!","Você precisa tirar uma foto para poder compartilhar");
+    alertaErro("Take a picture!","You need to take a picture to share");
     return;
   }  
 
@@ -180,7 +180,7 @@ function getLocaisProximos(){
       success: function(d){
         var res = d.results;
         var i =0;
-        var opts='{"Não Informado":"Não Informar"';
+        var opts='{"Unknown":"Unknown"';
         if(res.length>0){
           opts+=",";
         }
@@ -200,7 +200,7 @@ function getLocaisProximos(){
 }        
 
 function erroGPS(){
-  Alert("Erro GPS");
+  Alert("Error on GPS");
 }
 
 function atualizaGPS(){
@@ -286,7 +286,7 @@ function savebase64AsImageFile(folderpath,filename,content,contentType){
             });
     });
     });
-    alertaSucesso("Sucesso","Foto salva com sucesso!");
+    alertaSucesso("Sucess","Photo saved!");
 }
 
 function criaNomeFoto() {
