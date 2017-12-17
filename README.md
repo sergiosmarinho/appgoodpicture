@@ -4,7 +4,7 @@ App Good Picture
 
 Abaixo estão alguns prints do app:
 
-![Print 1](https://github.com/sergiosmarinho/appgoodpicture/blob/master/prints/print.png)
+![Print 1](https://github.com/sergiosmarinho/appgoodpicture/blob/master/prints/print.png width=200)
 ![Print 2](https://github.com/sergiosmarinho/appgoodpicture/blob/master/prints/print2.png)
 ![Print 3](https://github.com/sergiosmarinho/appgoodpicture/blob/master/prints/print3.png)
 ![Print 4](https://github.com/sergiosmarinho/appgoodpicture/blob/master/prints/print4.png)
