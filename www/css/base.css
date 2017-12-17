@@ -80,6 +80,7 @@
 	}
 	#opcoesmais{
 		position: absolute;
+		width: 100vw;
 		bottom: 3vh;
 	}
 	#btnshare{
